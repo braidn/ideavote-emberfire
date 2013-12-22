@@ -1,0 +1,10 @@
+{
+  "name": "Grunt-Emblem-Firebase-Ember",
+  "version": "0.1.0",
+  "devDependencies": {
+    "esprima": "~1.0.4",
+    "grunt": "~0.4.2",
+    "grunt-emblem": "~0.1.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
