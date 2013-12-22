@@ -1,12 +1,13 @@
 require 'bundler/setup'
 
 require 'sinatra'
+require 'slim'
 
 class App < Sinatra::Base
 
-  set :db_name, 'emberfire-ideavote'
+  set :db_name, 'ember-ideavote'
 
   get '/' do
-    erb :index, locals: { db_name: settings.db_name }
+    slim :index, locals: { db_name: settings.db_name }
   end
 end
