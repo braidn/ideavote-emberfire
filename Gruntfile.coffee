@@ -6,7 +6,7 @@ module.exports = (grunt) ->
     emblem:
       compile:
         files:
-          'templates.js': 'templates/*.emblem'
+          'templates.js': ['templates/*.emblem', 'templates/**/*.emblem']
 
         options:
           root: 'templates/'
@@ -17,5 +17,5 @@ module.exports = (grunt) ->
             handlebars: 'public/js/handlebars-1.0.0.js'
 
     watch:
-      files: ['templates/*.emblem']
+      files: ['templates/*.emblem', 'templates/**/*.emblem']
       tasks: ['emblem']
