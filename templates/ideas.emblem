@@ -1,0 +1,5 @@
+= render "ideas/new"
+.idea-list
+  ul.unstyled
+    each controller
+      = render "idea" this

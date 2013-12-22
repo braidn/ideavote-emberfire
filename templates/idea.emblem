@@ -1,0 +1,17 @@
+if displayable
+  li
+    .idea
+      .row
+        .span8
+          strong
+            = title
+        .span1
+          = voteCount
+        if auth.authed
+          .span2
+          if voteable
+            button{bindAttr class=":btn noVotesLeft:btn-disabled:btn-primary"}{bindAttr disabled="noVotesLeft"}{action 'vote'}
+              Vote
+          else
+            button class="btn disabled" disabled
+              You voted
